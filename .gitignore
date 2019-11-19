@@ -101,6 +101,7 @@ rectories
 # DynamoDB Local files
 .dynamodb/
 
+*.pdf
 # TernJS port file
 .tern-port
 
