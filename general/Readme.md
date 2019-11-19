@@ -28,10 +28,10 @@ I have provided references to give people/organisation their due but it is presc
 
 2. How to use ? Add this at the top of you css file.
 
-```
-@charset "utf-8";
+    ```
+    @charset "utf-8";
 
-```
+    ```
 
 3. This is useful in contexts where the encoding is not told per HTTP header or other meta data, e.g. the local file system. If a reader saves the file to a hard drive and you omit the @charset rule, most browsers will read it in the OS’ locale encoding, e.g. Windows-1252, and insert â†— instead of an arrow. [Ref](https://stackoverflow.com/questions/2526033/why-specify-charset-utf-8-in-your-css-file)
 
