@@ -37,3 +37,20 @@ I have provided references to give people/organisation their due but it is presc
 
 4. Also to avoid xss. Not really sure how this charset is used to exploit. Once I understand I will update here.
 
+# OneLineTips
+
+1. Initial *Keyword* and *Value* :-  If the cascaded value of a property is the initial keyword, the property’s initial value becomes its specified value. Each property has an initial value, defined in the property’s definition table. If the property is not an inherited property, and the cascade does not result in a value, then the specified value of the property is its initial value. Initial acts as hard reset. [Ref](https://css-tricks.com/getting-acquainted-with-initial/) 
+
+2. Inherit :- Each property has an initial value, defined in the property’s definition table. If the property is not an inherited property, and the cascade does not result in a value, then the specified value of the property is its initial value. Each property has an initial value, defined in the property’s definition table. If the property is not an inherited property, and the cascade does not result in a value, then the specified value of the property is its initial value. [Ref](https://www.w3.org/TR/CSS2/cascade.html#value-def-inherit)
+
+3. Difference b/w Inherit and Initial :- initial and inherit are distinct in the extra step that inherit takes to check whether there are other properties it can use in the cascade before it moves to the initial value.
+
+4. The "all" shorthand CSS property resets all of an element's properties (except unicode-bidi and direction). It can set properties to their initial or inherited values, or to the values specified in another stylesheet origin. [Ref](https://developer.mozilla.org/en-US/docs/Web/CSS/all) 
+    ```
+    all: initial;
+    all: inherit;
+    all: unset; /*Specifies that all the element's properties should be changed to their inherited values if they inherit by default, or to their initial values if not.*/
+    all: revert; /* Specifies behavior that depends on the stylesheet origin to which the declaration belongs*/
+
+    ```
+5. 

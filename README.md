@@ -19,3 +19,7 @@ Understanding of an average developer of css plateaus after ingesting articles f
 2. Canvas
 3. Non intuitive css
 4. HTML custom elements.
+
+## Updates
+
+1. 19/11/2019 Added Cascade algorithm and charset. [Link to resource](https://github.com/rava-dosa/css-girls/tree/master/general)
