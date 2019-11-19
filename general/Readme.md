@@ -1,5 +1,7 @@
-## Precaution for reading this
+# Precaution for reading this
 I have provided references to give people/organisation their due but it is prescribed not to click on them yet. 
+
+# Cascade
 1. CSS stands for cascade style sheets.
 2. So what does cascade means ?
 3. The cascade is an algorithm that defines how to combine property values originating from different sources. [Ref](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
@@ -19,3 +21,19 @@ I have provided references to give people/organisation their due but it is presc
     4. Initial & Inherited Properties (default values) :- Inherited properties will trickle down from parent elements to child elements. For example, the font-family & color properties are inherited. This behavior is what most people think of when they see the word “cascade” because styles will trickle down to their children.
 
 14. So now you understand cascade and hence some css.
+
+# Charset 
+
+1. The @charset CSS at-rule specifies the character encoding used in the style sheet. It must be the first element in the style sheet and not be preceded by any character; as it is not a nested statement, it cannot be used inside conditional group at-rules. If several @charset at-rules are defined, only the first one is used, and it cannot be used inside a style attribute on an HTML element or inside the <style> element where the character set of the HTML page is relevant. [Ref](https://developer.mozilla.org/en-US/docs/Web/CSS/@charset)
+
+2. How to use ? Add this at the top of you css file.
+
+```
+@charset "utf-8";
+
+```
+
+3. This is useful in contexts where the encoding is not told per HTTP header or other meta data, e.g. the local file system. If a reader saves the file to a hard drive and you omit the @charset rule, most browsers will read it in the OS’ locale encoding, e.g. Windows-1252, and insert â†— instead of an arrow. [Ref](https://stackoverflow.com/questions/2526033/why-specify-charset-utf-8-in-your-css-file)
+
+4. Also to avoid xss. Not really sure how this charset is used to exploit. Once I understand I will update here.
+
