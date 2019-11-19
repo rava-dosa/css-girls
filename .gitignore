@@ -110,4 +110,4 @@ local-test/
 postcss.config.js
 demo.css
 
-tailwind/package-lock.json
+package-lock.json
